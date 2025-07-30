@@ -1,14 +1,12 @@
-// Last updated: 7/30/2025, 3:08:43 PM
+// Last updated: 7/30/2025, 3:13:31 PM
 public class LRUCache {
     private int DicCapacity ;
     private List<int> UsedKeys  ;
-    private List<int> InsertedKeys  ;
     private Dictionary <int,int> cache ;
     public LRUCache(int capacity) {
         DicCapacity = capacity;
         cache = new Dictionary<int, int>();
         UsedKeys = new List<int>(); 
-        InsertedKeys = new List<int>(); 
     }
     
     public int Get(int key) {
